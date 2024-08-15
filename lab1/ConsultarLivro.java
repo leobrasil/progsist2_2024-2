@@ -7,6 +7,7 @@ public class ConsultarLivro{
 
     public static void main(String[] args) {
         Path arq_livros = Paths.get("/workspaces/progsist2_2024-2/lab1/livros.txt");
+        System.out.println("iniciando processo de leitura");
         try{
             String livros[] = Files.readAllLines(arq_livros).toArray(new String[0]);
             for (String livro : livros) {
